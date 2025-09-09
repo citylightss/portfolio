@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="/style1.css" />
+    <title>Ирина Васькова. Портфолио</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-hi">
+        <span class="color-accent">Привет, я</span> Ирина Васькова
+      </h1>
+      <!-- Меню бургер -->
+
+      <!-- Конец меню бургер -->
+      <nav class="nav-menu">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a href="#about" class="menu-link">&gt;Обо мне</a>
+          </li>
+          <li class="menu-item">
+            <a href="#pdf" class="menu-link">&gt;Кейсы</a>
+          </li>
+          <li class="menu-item">
+            <a href="#portfolio" class="menu-link">&gt;Тексты</a>
+          </li>
+          <li class="menu-item">
+            <a href="#edu" class="menu-link">&gt;Образование и курсы</a>
+          </li>
+          <!-- <li class="menu-item">
+            <a href="#video" class="menu-link">&gt;Видео</a>
+          </li> -->
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="cover content-section">
+        <div class="cover-header">
+          <h2 class="cover-header__title">Портфолио</h2>
+          <h3 class="cover-header__text">Редактор, внутренние коммуникации</h3>
+          <!-- <a href="" target="_blank"
+              ><button class="cover-header__button">Резюме на hh.ru</button></a
+            > -->
+        </div>
+      </section>
+      <section class="tools">
+        <div class="tools-wrapper content-section">
+          <p class="tool">Figma</p>
+          <p class="tool">AI</p>
+          <p class="tool">Confluence</p>
+          <p class="tool">Jira</p>
+          <p class="tool">Trello</p>
+          <p class="tool">HTML/CSS</p>
+        </div>
+      </section>
+      <section class="about content-section" id="about">
+        <h4 class="about-header">Обо мне</h4>
+        <div class="about-wrapper">
+          <div class="about-text">
+            <p class="about-text__p">
+              10 лет в корпоративных коммуникациях финтеха, последние
+              2&nbsp;года отвечала за&nbsp;коммуникационную поддержку
+              agile-трансформации розничного бизнеса в&nbsp;Газпромбанке.
+            </p>
+            <p class="about-text__p">
+              Пишу и редактирую тексты с заботой о&nbsp;читателе
+              и&nbsp;пользователе, выстраиваю процессы, помогаю стейкхолдерам
+              и&nbsp;командам рассказывать о&nbsp;своих проектах
+              и&nbsp;результатах, отвечаю за&nbsp;информационную поддержку
+              событий, собираю лендинги.
+            </p>
+          </div>
+          <img src="/img/me.png" alt="" class="about-image" />
+        </div>
+      </section>
+
+       <!-- PDF начало -->
+       <section class="pdf-section content-section" id="pdf">
+        <h4 class="portfolio-header">Кейсы</h4>
+        <div class="pdf-wrapper">
+          <div class="pdf-item" data-pdf="/Telegram.pdf">
+            <div class="pdf-image">
+              <img
+                src="/img/TG.png"
+                alt="tg"
+              />
+            </div>
+            <!-- <h3 class="pdf-subtitle">Запуск telegram-канала</h3> -->
+          </div>
+
+          <div class="pdf-item" data-pdf="/Confluence.pdf">
+            <div class="pdf-image">
+              <img
+                src="/img/Conf.png"
+                alt="Confluence"
+              />
+            </div>
+            <!-- <h3 class="pdf-subtitle"></h3> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal Overlay -->
+      <div class="modal2-overlay" id="pdfModal2">
+        <div class="modal2-content">
+          <div class="modal2-header">
+            <div class="modal2-title">Просмотр документа</div>
+            <button class="close-button" id="closeModal2">&times;</button>
+          </div>
+          <div class="pdf-container">
+            <iframe id="pdfFrame" src="" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- PDF конец -->
+
+      <section class="portfolio content-section" id="portfolio">
+        <h4 class="portfolio-header">Тексты</h4>
+        <!-- Портфолио  -->
+        <div class="gallery">
+          <!-- <img
+            src="/img/Portfolio/1.png"
+            alt="Image 1"
+            onclick="openModal('/img/Portfolio/lg/1.png')"
+          /> -->
+          <img
+            src="/img/Portfolio/2.png"
+            alt="Image 2"
+            onclick="openModal('/img/Portfolio/lg/2.png')"
+          />
+          <img
+            src="/img/Portfolio/3.png"
+            alt="Image 3"
+            onclick="openModal('/img/Portfolio/lg/3.png')"
+          />
+          <img
+            src="/img/Portfolio/4.png"
+            alt="Image 4"
+            onclick="openModal('/img/Portfolio/lg/4.png')"
+          />
+          <img
+            src="/img/Portfolio/5.png"
+            alt="Image 5"
+            onclick="openModal('/img/Portfolio/lg/5.png')"
+          />
+          <!-- <img
+            src="/img/Portfolio/5.1.png"
+            alt="Image 5.1"
+            onclick="openModal('/img/Portfolio/lg/5.1.png')"
+          /> -->
+          <img
+            src="/img/Portfolio/5.2.png"
+            alt="Image 5.2"
+            onclick="openModal('/img/Portfolio/lg/5.2.png')"
+          />
+          <img
+            src="/img/Portfolio/6.png"
+            alt="Image 6"
+            onclick="openModal('/img/Portfolio/lg/6.jpg')"
+          />
+          <img
+            src="/img/Portfolio/7.png"
+            alt="Image 7"
+            onclick="openModal('/img/Portfolio/lg/7.jpg')"
+          />
+          <img
+            src="/img/Portfolio/8.png"
+            alt="Image 8"
+            onclick="openModal('/img/Portfolio/lg/8.jpg')"
+          />
+          <img
+            src="/img/Portfolio/9.png"
+            alt="Image 9"
+            onclick="openModal('/img/Portfolio/lg/9.jpg')"
+          />
+          <img
+            src="/img/Portfolio/10.png"
+            alt="Image 10"
+            onclick="openModal('/img/Portfolio/lg/10.jpg')"
+          />
+          <img
+            src="/img/Portfolio/11.png"
+            alt="Image 11"
+            onclick="openModal('/img/Portfolio/lg/11.jpg')"
+          />
+          <img
+            src="/img/Portfolio/12.png"
+            alt="Image 12"
+            onclick="openModal('/img/Portfolio/lg/13.jpg')"
+          />
+          <!-- Добавьте больше изображений по необходимости -->
+        </div>
+
+        <!-- Модальное окно -->
+        <div id="modal" class="modal" onclick="closeModal()">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modal-image" />
+        </div>
+        <!-- Конец портфолио -->
+
+      </section>
+      <section class="edu content-section" id="edu">
+        <div class="content">
+          <div class="list-container">
+            <h2 class="edu-header">Образование и курсы</h2>
+            <ul class="edu-list">
+              <li>
+                <strong>МГУ им. Ломоносова</strong>
+                <p class="list-description">
+                  Факультет журналистики. 2005 - 2010
+                </p>
+              </li>
+              <li>
+                <strong>НИУ Высшая школа экономики</strong>
+                <p class="list-description">Промт-инжиниринг. 2025</p>
+              </li>
+              <li>
+                <strong>Бюро Горбунова</strong>
+                <p class="list-description">
+                  Информационный стиль и редактура текста 2.0 с Максимом
+                  Ильяховым. 2025
+                </p>
+              </li>
+              <li>
+                <strong>Бауманский учебный центр «Специалист»</strong>
+                <p class="list-description">
+                  JavaScript. Уровень 1. Основы JavaScript. 2025
+                </p>
+              </li>
+              <li>
+                <strong>Яндекс.Практикум</strong>
+                <p class="list-description">
+                  Профессиональная вёрстка на HTML и CSS. 2024
+                </p>
+              </li>
+              <li>
+                <strong>НИУ Высшая школа экономики</strong>
+                <p class="list-description">Контент-маркетинг. 2022</p>
+              </li>
+              <li>
+                <strong>НИУ Высшая школа экономики</strong>
+                <p class="list-description">Digital-маркетинг. 2021</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="video" id="video">
+        <h4 class="video-header">Видео</h4>
+      </section> -->
+    </main>
+    <footer class="footer content-section">
+      <a href="#" class="go-back-link">&gt;В начало</a>
+      <p class="footer-text">&copy; 2025</p>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
